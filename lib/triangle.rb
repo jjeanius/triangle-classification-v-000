@@ -12,12 +12,14 @@ attr_accessor :a, :b, :c, :triangle
   end
 
    def kind
-      if @a == @b && @a == @c && @c == @b
+      if @a <= 0 || @b <= 0 || @c <=0
+         raise TriangleError
+      elsif @a == @b && @a == @c && @c == @b
         :equilateral
       elsif @a == @b || @a == @c || @b == @c
         :isosceles
-      elsif @triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
-        raise TriangleError
+      #elsif @triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
+      #  raise TriangleError
       else
         :scalene
       end
