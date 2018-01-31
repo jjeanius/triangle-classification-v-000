@@ -19,9 +19,6 @@ attr_accessor :a, :b, :c, :triangle
       else
         :scalene
       end
-
-      
-     end
   end
 
   if triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
