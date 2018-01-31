@@ -41,7 +41,7 @@ describe 'Triangle' do
   end
 
   it 'knows that triangles with no size are illegal' do
-    expect{tr.kind}.to raise_error(TriangleError)
+    expect{Triangle.new(0, 0, 0).kind}.to raise_error(TriangleError)
   end
 
   it 'knows that triangles with negative sides are illegal' do
@@ -60,4 +60,3 @@ describe 'Triangle' do
     expect{Triangle.new(7, 3, 2).kind}.to raise_error(TriangleError)
   end
 end
-s
