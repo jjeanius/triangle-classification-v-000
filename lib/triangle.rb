@@ -16,13 +16,7 @@ attr_accessor :a, :b, :c
     elsif @a == @b || @a == @c || @b == @c
         :isosceles
     elsif @a <= 0 || @b <= 0 || @c <=0
-
-      begin
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-        binding.pry
-      end
     else
         :scalene
     end
