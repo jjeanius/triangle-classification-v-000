@@ -16,12 +16,14 @@ attr_accessor :a, :b, :c, :triangle
         :equilateral
       elsif @a == @b || @a == @c || @b == @c
         :isosceles
+      elsif @triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
+        raise TriangleError        
       else
         :scalene
       end
-  @triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
-    raise TriangleError
   end
+end
+end
 
     class TriangleError < StandardError
        def message
