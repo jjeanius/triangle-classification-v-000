@@ -12,7 +12,7 @@ attr_accessor :a, :b, :c, :triangle
   end
 
    def kind
-      if @a + @b < @c || @b + @c < @a || @c + @a < @b
+      if @a + @b <= @c || @b + @c <= @a || @c + @a <= @b
          raise TriangleError
      elsif @a <= 0 || @b <= 0 || @c <= 0
        raise TriangleError
