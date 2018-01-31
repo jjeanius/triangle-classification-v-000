@@ -9,6 +9,7 @@ attr_accessor :a, :b, :c, :triangle
     @b = b
     @c = c
     @triangle = triangle
+    @TriangleError
   end
 
    def kind
