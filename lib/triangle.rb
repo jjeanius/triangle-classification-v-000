@@ -26,7 +26,7 @@ attr_accessor :a, :b, :c
 end
 
     class TriangleError < StandardError
-       #def message
-      #   "TriangleError"
-       #end
+       def message
+         "TriangleError"
+       end
     end
