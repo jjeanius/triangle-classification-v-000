@@ -21,11 +21,10 @@ attr_accessor :a, :b, :c, :triangle
       else
         :scalene
       end
-    end
     if @triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
     raise TriangleError
   end
-
+end
 end
 
     class TriangleError < StandardError
