@@ -17,8 +17,6 @@ attr_accessor :a, :b, :c
         :isosceles
     elsif @a <= 0 || @b <= 0 || @c <=0
         raise TriangleError
-      elsif @a = 0 &&  @b = 0 && @c =0
-          raise TriangleError
     else
         :scalene
     end
