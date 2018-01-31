@@ -16,8 +16,7 @@ attr_accessor :a, :b, :c
     elsif @a <= 0 || @b <= 0 || @c <=0
       begin
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
+        rescue TriangleError
       end
     else
         :scalene
