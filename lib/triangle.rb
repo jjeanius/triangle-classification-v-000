@@ -8,6 +8,7 @@ attr_accessor :a, :b, :c, :triangle
     @a = a
     @b = b
     @c = c
+    @triangle = triangle
   end
 
    def kind
