@@ -20,13 +20,11 @@ attr_accessor :a, :b, :c, :triangle
         :scalene
       end
     end
+  end
 
-def kind
   @triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
     raise TriangleError
   end
-
-end
 
     class TriangleError < StandardError
        def message
