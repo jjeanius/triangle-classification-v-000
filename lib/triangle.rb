@@ -13,7 +13,7 @@ attr_accessor :equilateral, :isosceles, :scalene, :triangle
       :equilateral
     elsif @a == @b || @a == @c || @b == @c
         :isosceles
-    elsif @a <= 0 || @b <= 0 || @c <=0 || !:equilateral && !:isosceles && !:scalene
+    elsif @a <= 0 || @b <= 0 || @c <=0
       begin
         raise TriangleError
       rescue TriangleError => error
