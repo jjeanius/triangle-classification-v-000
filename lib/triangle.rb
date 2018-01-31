@@ -26,7 +26,6 @@ attr_accessor :a, :b, :c, :triangle
     raise TriangleError
   end
 end
-end
 
 
     class TriangleError < StandardError
