@@ -60,3 +60,4 @@ describe 'Triangle' do
     expect{Triangle.new(7, 3, 2).kind}.to raise_error(TriangleError)
   end
 end
+s
