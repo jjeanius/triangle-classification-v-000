@@ -25,8 +25,6 @@ attr_accessor :equilateral, :isosceles, :scalene, :triangle
   end
 end
 
-
-
     class TriangleError < StandardError
        def message
          "TriangleError"
