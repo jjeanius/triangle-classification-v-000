@@ -2,14 +2,13 @@ require 'pry'
 
 class Triangle
 
-attr_accessor :a, :b, :c, :triangle, :TriangleError
+attr_accessor :a, :b, :c, :triangle
 
   def initialize(a, b, c)
     @a = a
     @b = b
     @c = c
     @triangle = triangle
-    @TriangleError
   end
 
    def kind
@@ -20,15 +19,13 @@ attr_accessor :a, :b, :c, :triangle, :TriangleError
       else
         :scalene
       end
-  end
+    end
 
   if @triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
     raise TriangleError
   end
 
 end
-
-
 
     class TriangleError < StandardError
        def message
