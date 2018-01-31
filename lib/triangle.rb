@@ -17,12 +17,11 @@ attr_accessor :a, :b, :c, :triangle
       elsif @a == @b || @a == @c || @b == @c
         :isosceles
       elsif @triangle != :equilateral || @triangle != :isosceles || @triangle != :scalene
-        raise TriangleError        
+        raise TriangleError
       else
         :scalene
       end
   end
-end
 end
 
     class TriangleError < StandardError
